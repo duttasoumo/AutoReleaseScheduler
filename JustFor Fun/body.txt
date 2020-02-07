@@ -1,0 +1,242 @@
+  <fo:table-row>
+                              <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getSettlementReferenceNoForUI())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getExternalReferenceNo())%>
+                                   </fo:block>
+							  </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getSenderReferenceNo())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getDisplayAccountNo())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getHin())%>
+                                   </fo:block>
+                              </fo:table-cell>
+                              <fo:table-cell   number-columns-spanned="2" padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getShortName())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                 <fo:block text-align="left" >
+                                 <%=formatString(obj.getTradeType())%>
+                                 </fo:block>
+                            </fo:table-cell>
+							  </fo:table-row>
+                         <fo:table-row>
+						 <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getTradeDateStr())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getValueDateStr())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=introduceSpace(formatString(obj.getInstrumentCode()), 15)%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getBuySellOrientation())%>
+                                   </fo:block>
+                              </fo:table-cell>	
+							   <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="right" >
+                                   <%=formatString(obj.getQuantityStr())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getMatchStatus())%>
+                                   </fo:block>
+                              </fo:table-cell>							  
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getCcyCode())%>
+                                   </fo:block>
+                              </fo:table-cell> 
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="right" >
+                                   <%=formatString(obj.getAmountStr())%>
+                                   </fo:block>
+                              </fo:table-cell>  
+                         </fo:table-row>
+                         <fo:table-row>
+						 <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getBrokerCode())%>
+                                   </fo:block>
+                          </fo:table-cell> 
+						  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getAdditionalCol1())%>
+                                   </fo:block>
+                          </fo:table-cell> 
+						 <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                        <%
+                                         if(formatString(obj.getStatus()).equals("NORMAL")) {
+                                         %>
+                                        <%
+                                          } else if(formatString(obj.getStatus()).equals("CANCEL")) {
+                                        %>
+                                             <fo:block color ="rgb(255,0,51)" >
+                                             CXL
+                                             </fo:block>
+                                        <%
+                                         } else {
+                                        %>
+                                             <%=formatString(obj.getStatus())%>
+                                        <%
+                                         }
+                                        %>
+                                   </fo:block>
+                              </fo:table-cell>
+                              <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+									<%=formatString(obj.getSettlementStatus())%>
+                                   </fo:block>
+                              </fo:table-cell>
+                            <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+									<%=formatString(obj.getSettlementInfoStatus())%>
+                                   </fo:block>
+                            </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getNextValueDateStr())%>
+                                   </fo:block>
+                              </fo:table-cell>   
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                 <fo:block text-align="left" >
+                                 <%=formatString(obj.getCompletionDateStr())%>
+                                 </fo:block>
+                            </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                 <fo:block text-align="left" >
+                                 <%=formatString(obj.getDvpEligibleFlag())%>
+                                 </fo:block>
+                            </fo:table-cell>	
+                            </fo:table-row>
+							<fo:table-row>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                 <fo:block text-align="right" >
+                                 <%=formatString(obj.getCompleteQuantityStr())%>
+                                 </fo:block>
+                            </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+                                 <fo:block text-align="right" >
+                                 <%=formatString(obj.getCompleteAmountStr())%>
+                                 </fo:block>
+                            </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" >
+				         <fo:block>
+			               <%=introduceSpace(formatString(obj.getAltSecurityCode()), 15)%>
+				         </fo:block>
+			             </fo:table-cell>
+						  <fo:table-cell padding="1pt" number-columns-spanned="2" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getInstShortName())%>
+                                   </fo:block>
+                          </fo:table-cell>
+						  <fo:table-cell number-columns-spanned="2" padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getOurSettleAccountSec())%>
+                                   </fo:block>
+                          </fo:table-cell>
+						 <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getOurParticipantId())%>
+                                   </fo:block>
+                          </fo:table-cell>
+							  </fo:table-row>
+							  <fo:table-row>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getOurSettleAccountCash())%>
+                                   </fo:block>
+							   </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getOurPaymentFacilityId())%>
+                                   </fo:block>
+							  </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getTransmissionDateStr())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getInxStatus())%>
+                                   </fo:block>
+                              </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt"  >
+			                    <fo:block text-align="left" >
+                                        <% 
+                                            String CONST_COMPLETE = "COMPLETE";
+                                            if(obj.getReasonCode()== null || obj.getReasonCode()=="" || CONST_COMPLETE.equals(obj.getSettleStatusString())) { 
+                                         %>
+                                         <%=formatString("-")%>
+                                        <% } else { %>               
+                                         <%=formatString(obj.getReasonCode())%>
+                                        <% } %>
+			                          </fo:block>
+                         </fo:table-cell>
+                         <fo:table-cell  number-columns-spanned="3" padding="1pt" padding-left="4pt">
+                                <fo:block text-align="left" >
+                                <% 
+                                    if(obj.getReasonDescription()== null || obj.getReasonDescription()=="" || CONST_COMPLETE.equals(obj.getSettleStatusString())) {  
+                                 %>
+                                    <%=formatString("-")%>
+                                <% } else { %>               
+                                    <%=formatString(obj.getReasonDescription())%>
+                                <% } %>
+                               </fo:block>
+			             </fo:table-cell>
+					    </fo:table-row>
+					    <fo:table-row>
+						<fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getSupplementaryReferenceNo())%>
+                                   </fo:block>
+                         </fo:table-cell>
+						 <fo:table-cell padding="1pt" padding-left="4pt" >
+                                   <fo:block text-align="left" >
+                                   <%=formatString(obj.getUnderlyingReferenceNo())%>
+                                   </fo:block>
+                         </fo:table-cell>
+						</fo:table-row>
+                         <fo:table-row>
+                              <fo:table-cell number-columns-spanned ="9" padding="1pt">
+                                    <fo:block border-bottom=".01pt solid black" />
+                              </fo:table-cell>
+                         </fo:table-row>
+						 
+                         <%
+                             }
+                           } else {
+                         %>
+                         <fo:table-row>
+                              <fo:table-cell number-columns-spanned= "9" >
+                                   <fo:block text-align="center" font-size="10pt" padding-top="5pt">
+                                    NO DATA FOUND
+                                   </fo:block>
+                              </fo:table-cell>
+                         </fo:table-row >

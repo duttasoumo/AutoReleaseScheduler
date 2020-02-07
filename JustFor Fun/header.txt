@@ -1,0 +1,201 @@
+ <fo:table-header font-size="<%=formatSize((global_data_key.get("pdf.header.font.size")).toString(),"8pt")%>"  font-family="<%=formatFamily((global_data_key.get("pdf.header.font.family")).toString(),"Helvetica")%>"  font-weight="<%=formatStyle((global_data_key.get("pdf.header.font.weight")).toString(),"normal")%>"  color="<%=formatColor((global_data_key.get("pdf.header.font.color")).toString(),"#000000")%>"  background-color="<%=formatColor((global_data_key.get("pdf.header.background.color")).toString(),"#FFFFFF")%>"   >
+                         <fo:table-row>
+                              <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settlementrefno"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.externalRefNo"))%>
+                                   </fo:block>
+                             </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.senderRefNo"))%>
+                                   </fo:block>
+                             </fo:table-cell>
+							 <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.accountno"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.hin"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt"   number-columns-spanned="2" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.accountname.short"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+				               <fo:block text-align="left" >
+				                      <%=formatString(global_data_key .get("stl.stlqryreport.label.tradetype"))%>
+				                      </fo:block>
+				               </fo:table-cell>
+                         </fo:table-row>
+                         <fo:table-row>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.tradeDate"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.valueDate"))%>
+                                   </fo:block>
+							  </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.securityCode"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.buysellorientation"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+                               <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settleQntywooriginal"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.matchedstatus"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.CurrencyCode"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settleAmtwooriginal"))%>
+                                   </fo:block>
+                              </fo:table-cell> 
+                            </fo:table-row>
+							<fo:table-row>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.brokercode"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.overridebasisofmovement"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.status"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settlementstatus"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settlementinfostatus"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.firm.nextvaluedate"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.settlementDate"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.dvp.eligible.flag"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							</fo:table-row>
+                            <fo:table-row>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.completed.quantity"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.completed.amount"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							 <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                       <fo:block text-align="left" color="rgb(0,0,0)">
+                                       <%=formatString(global_data_key .get("stl.stlqryreport.label.alternateSecurity"))%>
+                                       </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt"   number-columns-spanned="2" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.securityName"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" number-columns-spanned="2" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.ouraccountwobrkno"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.firm.delivering.receiving.pid"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							</fo:table-row>
+                            <fo:table-row>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.ourcashaccountwobrkno"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.firm.ourpaymentfacilityid"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.instruction.transmissionDate"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                   <fo:block text-align="left" >
+                                   <%=formatString(global_data_key .get("stl.stlqryreport.label.instruction.status"))%>
+                                   </fo:block>
+                              </fo:table-cell>
+							  <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+				               <fo:block text-align="left" >
+				                      <%=formatString(global_data_key .get("stl.stlqryreport.label.rejected.reasoncode"))%>
+				                      </fo:block>
+				               </fo:table-cell>
+	                          <fo:table-cell padding="1pt"  number-columns-spanned="3" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+				               <fo:block text-align="left" >
+				                      <%=formatString(global_data_key .get("stl.stlqryreport.label.rejected.reason"))%>
+				                      </fo:block>
+				               </fo:table-cell>
+							   </fo:table-row>
+							    <fo:table-row>
+								<fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+									  <fo:block text-align="left" >
+				                      <%=formatString(global_data_key .get("stl.stlqryreport.label.supplementaryRefNo"))%>
+				                      </fo:block>
+				               </fo:table-cell>
+							   <fo:table-cell padding="1pt" padding-left="4pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+									  <fo:block text-align="left" >
+				                      <%=formatString(global_data_key .get("stl.stlqryreport.label.underlyingRefNo"))%>
+				                      </fo:block>
+				               </fo:table-cell>
+								<fo:table-cell number-columns-spanned ="6" padding="1pt" padding-left="8pt" border-top=".01pt solid black" border-bottom=".01pt solid black" border-right=".01pt solid black" border-left=".01pt solid black">
+                                 </fo:table-cell>
+								</fo:table-row>
+						       </fo:table-header>

@@ -1,11 +1,29 @@
 package main.console.launcher;
 
-import main.message.mapper.BaseMapping;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class Launch {
+import main.message.mapper.BaseMapping;
+@SpringBootApplication
+public class Launch  implements ApplicationRunner {
 	
-	public static void main(String agrs[]) {
-		BaseMapping map;
+	private static final Logger logger = LogManager.getLogger(Launch.class);
+	
+	public static void main(String args[]) {
+		logger.info("***** Map Struct POC ******");
+		
+		SpringApplication.run(Launch.class, args);
+
+	}
+
+	@Override
+	public void run(ApplicationArguments args) throws Exception {
+		BaseMapping mapper=SpringCon
+		
 	}
 
 }

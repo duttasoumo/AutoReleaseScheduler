@@ -3,11 +3,11 @@ package main.message.beans;
 import java.util.List;
 import java.util.Map;
 
-public class RandomBean0 {
-	int roll_no;
-	List<String> subjectCode;
-	Map result;
-	Person studentDetails;
+public class RandomBean0 implements MessageBean{
+	public int roll_no;
+	public List<String> subjectCode;
+	public Map result;
+	public Person studentDetails;
 
 	@Override
 	public String toString() {

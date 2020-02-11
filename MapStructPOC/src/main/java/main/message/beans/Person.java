@@ -1,8 +1,8 @@
 package main.message.beans;
 
 public class Person {
-	String name;
-	String address;
-	String age;
-	String dob;
+	public String name;
+	public String address;
+	public String age;
+	public String dob;
 }

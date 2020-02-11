@@ -3,7 +3,7 @@ package main.message.beans;
 import java.util.List;
 import java.util.Map;
 
-public class RandomBean2 {
+public class RandomBean2 implements MessageBean{
 	int roll;
 	List<String> subjectList;
 	Map resultList;

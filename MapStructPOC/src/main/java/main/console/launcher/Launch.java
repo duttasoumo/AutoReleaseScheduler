@@ -1,8 +1,5 @@
 package main.console.launcher;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +13,6 @@ import main.exc.bean.BeanCreater;
 import main.exc.bean.MapperContext;
 import main.message.beans.MessageBean;
 import main.message.beans.RandomBean0;
-import main.message.beans.RandomBean1;
-import main.message.beans.RandomBean2;
 import main.message.mapper.BaseMapping;
 
 @SpringBootApplication

@@ -57,13 +57,13 @@ public class TemporaryBean1 implements Serializable{
 		this.subject_code = subject_code;
 	}
 	/**
-	 * @return the roll_no
+	 * @return the rollNo
 	 */
 	public String getRoll_no() {
 		return roll_no;
 	}
 	/**
-	 * @param roll_no the roll_no to set
+	 * @param rollNo the rollNo to set
 	 */
 	public void setRoll_no(String roll_no) {
 		this.roll_no = roll_no;

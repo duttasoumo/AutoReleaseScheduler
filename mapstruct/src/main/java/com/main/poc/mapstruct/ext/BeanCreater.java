@@ -9,7 +9,7 @@ import com.main.poc.mapstruct.message.bean.RandomBean0;
 public class BeanCreater {
 	public static RandomBean0 createBean0() {
 		RandomBean0 bean0=new RandomBean0();
-		bean0.roll_no=123654;
+		bean0.rollNo=123654;
 		bean0.subjectCode=new ArrayList<String>();
 		bean0.subjectCode.add("Maths");
 		bean0.subjectCode.add("Sciecnce");

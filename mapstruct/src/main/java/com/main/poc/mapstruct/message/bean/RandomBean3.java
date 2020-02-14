@@ -3,17 +3,17 @@ package com.main.poc.mapstruct.message.bean;
 import java.util.List;
 
 public class RandomBean3 implements MessageBean {
-	List<String> subject;
+	public List<String> subject;
 	// depends on subject from property file
-	List<String> teacher;
-	// depends on name initials and roll_no
-	String exam_reg;
+	public List<String> teacher;
+	// depends on name initials and rollNo
+	public String examReg;
 
 	@Override
 	public String toString() {
 		StringBuffer str = new StringBuffer();
 		str.append("\nTeacher List :" + teacher).append("\nSubject List : " + subject)
-				.append("\nExam Registration : " + exam_reg);
+				.append("\nExam Registration : " + examReg);
 		return str.toString();
 	}
 }

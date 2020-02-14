@@ -76,13 +76,13 @@ public class TemporaryBean2 implements Serializable{
 		this.country = country;
 	}
 	/**
-	 * @return the roll_no
+	 * @return the rollNo
 	 */
 	public long getRoll_no() {
 		return roll_no;
 	}
 	/**
-	 * @param roll_no the roll_no to set
+	 * @param rollNo the rollNo to set
 	 */
 	public void setRoll_no(long roll_no) {
 		this.roll_no = roll_no;

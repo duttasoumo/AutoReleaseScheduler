@@ -1,6 +1,5 @@
 package com.main.poc.mapstruct.message.mapper;
 
-import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
@@ -9,6 +8,7 @@ import com.main.poc.mapstruct.message.bean.Person;
 import com.main.poc.mapstruct.message.bean.RandomBean0;
 import com.main.poc.mapstruct.message.bean.RandomBean2;
 
+@Component
 @Mapper(componentModel = "spring")
 public abstract class Bean02FromBean00Mapping implements BaseMapping<RandomBean2,RandomBean0>{
 	protected abstract Person personFromPerson(Person per); 

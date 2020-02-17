@@ -6,14 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.main.poc.mapstruct.ext.BeanCreater;
-import com.main.poc.mapstruct.ext.MapperContext;
 import com.main.poc.mapstruct.message.bean.MessageBean;
-import com.main.poc.mapstruct.message.bean.RandomBean0;
-import com.main.poc.mapstruct.message.mapper.BaseMapping;
 
 //@SpringBootApplication
 public class Launch implements ApplicationRunner {

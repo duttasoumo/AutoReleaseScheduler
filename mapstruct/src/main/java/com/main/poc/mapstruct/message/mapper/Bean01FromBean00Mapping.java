@@ -8,8 +8,8 @@ import com.main.poc.mapstruct.message.bean.Person;
 import com.main.poc.mapstruct.message.bean.RandomBean0;
 import com.main.poc.mapstruct.message.bean.RandomBean1;
 
+@Component
 @Mapper(componentModel = "spring")
-@Component("Bean01FromBean00Mapping")
 public abstract class Bean01FromBean00Mapping implements BaseMapping<RandomBean1,RandomBean0> {
 	protected abstract RandomBean1 bean1FromBean0(RandomBean0 bean);
 	protected abstract Person PersonFromPerson(Person per);

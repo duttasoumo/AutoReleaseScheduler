@@ -12,7 +12,7 @@ public class BeanCreater {
 		bean0.setRollNo(123654);
 		bean0.setSubjectCode(new ArrayList<String>());
 		bean0.getSubjectCode().add("Maths");
-		bean0.getSubjectCode().add("Sciecnce");
+		bean0.getSubjectCode().add("Science");
 		bean0.getSubjectCode().add("SST");
 		bean0.getSubjectCode().add("Language");
 		bean0.setResult(new HashMap<String, Float>());

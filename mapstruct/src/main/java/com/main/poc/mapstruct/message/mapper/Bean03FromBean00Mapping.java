@@ -36,4 +36,10 @@ public abstract class Bean03FromBean00Mapping implements BaseMapping<RandomBean3
 		bean3.setExamReg(resolver.setExamReg());
 	}
 
+
+	@AfterMapping
+	public void afterMappingBean031(RandomBean0 bean0,@MappingTarget RandomBean3 bean3) {
+		bean3.setExamReg(resolver.setExamReg());
+	}
+
 }

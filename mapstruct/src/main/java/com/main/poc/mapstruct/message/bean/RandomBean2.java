@@ -14,7 +14,7 @@ public class RandomBean2 implements MessageBean{
 		StringBuffer str = new StringBuffer();
 		str.append("\nRoll No .:" + roll).append(String.format("\nName:%s\tAddress:%s\tAge:%s", studentDetails.name,
 				studentDetails.address, studentDetails.age)).append(" Subject List : " + subjectList)
-				.append(" Result : " + resultList);
+				.append(" Result List: " + resultList);
 		return str.toString();
 	}
 }

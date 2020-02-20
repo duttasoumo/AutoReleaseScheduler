@@ -10,6 +10,7 @@ public class BeanCreater {
 	public static RandomBean0 createBean0() {
 		RandomBean0 bean0=new RandomBean0();
 		bean0.setRollNo(123654);
+		bean0.setClassSec(5);
 		bean0.setSubjectCode(new ArrayList<String>());
 		bean0.getSubjectCode().add("Maths");
 		bean0.getSubjectCode().add("Science");

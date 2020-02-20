@@ -26,7 +26,7 @@ public class MapstructApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		BaseMapping mapper = mapperCtx.getMapperBean("Bean04", "Bean00");
+		BaseMapping mapper = mapperCtx.getMapperBean("Bean03", "Bean00");
 		RandomBean0 bean0 = BeanCreater.createBean0();
 		System.out.println(mapper.getMappedBean(bean0));
 

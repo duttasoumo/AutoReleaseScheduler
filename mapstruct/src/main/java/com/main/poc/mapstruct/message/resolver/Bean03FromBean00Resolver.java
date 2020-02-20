@@ -23,10 +23,6 @@ public class Bean03FromBean00Resolver {
 	}
 	
 	@Named("examRegResolver")
-	public String examRegResolver() {
-		return "SomeTest";
-	}
-
 	public String setExamReg() {
 		int num=(int)(Math.random()*1000);
 		return num+"Y2020";

@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class RandomBean0 implements MessageBean{
 	private int rollNo;
+	private int classSec;
 	private List<String> subjectCode;
 	private Map result;
 	private Person studentDetails;
@@ -30,6 +31,14 @@ public class RandomBean0 implements MessageBean{
 	 */
 	public void setRollNo(int rollNo) {
 		this.rollNo = rollNo;
+	}
+
+	public int getClassSec() {
+		return classSec;
+	}
+
+	public void setClassSec(int classSec) {
+		this.classSec = classSec;
 	}
 
 	/**

@@ -2,7 +2,6 @@ package test1;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.FileSystemResource;
 
 public class DrawingApplication {
 
@@ -13,7 +12,7 @@ public class DrawingApplication {
 		// TODO Auto-generated method stub
 
 		BeanFactory factory =(BeanFactory) new ClassPathXmlApplicationContext("spring.xml");
-		
+		factory.
 	}
 
 }

@@ -17,23 +17,19 @@ import com.main.poc.mapstruct.message.resolver.Bean03FromBean00Resolver;
  *
  */
 @Component
-@Mapper(componentModel = "spring",uses = Bean03FromBean00Resolver.class)
-@BeanMapping(mainMapper = "bean3FromBean0")
-public abstract class Bean03FromBean00Mapping{
+@Mapper(componentModel = "spring", uses = Bean03FromBean00Resolver.class,implementationName = "Bean0ToBean3Mapper")
+@BeanMapping(mappingFunction = "bean3FromBean0")
+public abstract class Bean03FromBean00Mapping implements BaseMapping<RandomBean3, RandomBean0>{
 
 	@Autowired
 	private Bean03FromBean00Resolver resolver;
+
 	@Mapping(target = "subject", source = "subjectCode")
 	@Mapping(target = "teacher", source = "subjectCode", qualifiedByName = "teacherMapping")
-	protected abstract RandomBean3 bean3FromBean0(RandomBean0 bean);
-
-//	@Override
-//	public RandomBean3 getMappedBean(RandomBean0 sourceBean) {
-//		return bean3FromBean0(sourceBean);
-//	}
+	public abstract RandomBean3 bean3FromBean0(RandomBean0 bean);
 
 	@AfterMapping
-	public void afterMappingBean03(RandomBean0 bean0,@MappingTarget RandomBean3 bean3) {
+	protected void afterMappingBean03(RandomBean0 bean0, @MappingTarget RandomBean3 bean3) {
 		bean3.setExamReg(resolver.setExamReg());
 	}
 }

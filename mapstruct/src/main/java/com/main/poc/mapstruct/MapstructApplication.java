@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.main.poc.mapstruct.ext.BeanCreater;
 import com.main.poc.mapstruct.ext.MapperContext;
 import com.main.poc.mapstruct.message.bean.RandomBean0;
-import com.main.poc.mapstruct.message.mapper.BaseMapping;
 
 @SpringBootApplication
 public class MapstructApplication implements ApplicationRunner {
@@ -26,9 +25,8 @@ public class MapstructApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		BaseMapping mapper = mapperCtx.getMapperBean("Bean03", "Bean00");
 		RandomBean0 bean0 = BeanCreater.createBean0();
-		System.out.println(mapper.getMappedBean(bean0));
+		System.out.println(mapperCtx.convert("bean3", "bean0", bean0));
 
 	}
 

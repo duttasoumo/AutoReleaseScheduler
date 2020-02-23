@@ -11,7 +11,5 @@ import CustomException.UnImplementedMethodException;
  * @param <V>
  */
 public interface BaseMapping<T  extends MessageBean, V  extends MessageBean> {
-	default public T getMappedBean(V sourceBean) {
-		throw new UnImplementedMethodException("BaseMapping.getMappedBean() Function not Defined ");
-	}
+	
 }

@@ -2,8 +2,6 @@ package com.main.poc.mapstruct.message.mapper;
 
 import com.main.poc.mapstruct.message.bean.MessageBean;
 
-import CustomException.UnImplementedMethodException;
-
 /**
  * @author soumodeepd
  *

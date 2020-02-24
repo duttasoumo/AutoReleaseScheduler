@@ -11,7 +11,6 @@ import com.main.poc.mapstruct.message.bean.MessageBean;
 import com.main.poc.mapstruct.message.bean.RandomBean0;
 
 import CustomException.IllegalMapperAnnotationException;
-import CustomException.MapperNotFounfException;
 
 @Component
 public class BeanMappingProcessor {

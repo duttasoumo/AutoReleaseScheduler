@@ -25,7 +25,7 @@ public class MapperContext {
 
 	public MessageBean convert(String dest, String source, MessageBean sourceBean) {
 		String mapperId = mapperBeanIdEval(dest, source);
-		BaseMapping mapper = applicationContext.getBean(mapperId, BaseMapping.class);
+		Object mapper = applicationContext.getBean(mapperId);
 		if (mapper == null) {
 			throw new MapperNotFounfException("Mapper Implementation notfound for mapperId =" + mapperId);
 		}
